@@ -12,7 +12,7 @@ const Marquee = async () => {
   const products = await res.json();
 
   return (
-    <div className="border-y border-green-100 bg-white py-1">
+    <div className="border-y border-gray-100 bg-white py-1 mt-0.5">
       <div className="mx-auto overflow-hidden">
         <MarqueeText direction="right" duration={10}>
           {products.map((product) => (
@@ -34,7 +34,7 @@ const Marquee = async () => {
 
               {/* Today's price */}
               <span className="font-semibold text-green-600">
-                ৳{product.today}
+                আজকে ৳{product.today}
               </span>
 
               {/* Yesterday */}
