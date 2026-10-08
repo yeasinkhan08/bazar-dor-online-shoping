@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import Navlinks from "../components/Navlinks";
+import Navlinks from "../components/Navlinks";
 
 const Header = () => {
   const date = Intl.DateTimeFormat("bn-BD", {
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* <Navlinks /> */}
+      <Navlinks />
     </div>
   );
 };
