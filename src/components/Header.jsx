@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navlinks from "../components/Navlinks";
+import Marquee from "./Marquee";
 
 const Header = () => {
   const date = Intl.DateTimeFormat("bn-BD", {
@@ -24,6 +25,7 @@ const Header = () => {
       </div>
 
       <Navlinks />
+      <Marquee />
     </div>
   );
 };
