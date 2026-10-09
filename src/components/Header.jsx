@@ -8,7 +8,7 @@ const Header = () => {
   }).format();
   return (
     <div>
-      <div className="mx-auto flex w-full justify-between items-center p-4 max-w-7xl sm:flex-row">
+      <div className="mx-auto flex w-full justify-between items-center bg-white p-4 max-w-7xl sm:flex-row">
         <div className="flex gap-2">
           <Image src={"/Stack.png"} alt="logo" height={40} width={50} />
           <div className="flex-col gap-2">
