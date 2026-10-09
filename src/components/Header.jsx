@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navlinks from "../components/Navlinks";
 import Marquee from "./Marquee";
+import Link from "next/link";
 
 const Header = () => {
   const date = Intl.DateTimeFormat("bn-BD", {
@@ -16,16 +17,20 @@ const Header = () => {
             <p className="text-sm">{date}</p>
           </div>
         </div>
-        <div className="flex gap-4 font-semibold">
-          <button className="">সাইন ইন</button>
-          <button className="btn btn-soft bg-green-700 text-white rounded-lg ">
-            সাইন আপ
-          </button>
+        <div className="flex gap-4 font-semibold items-center">
+          <Link href={"/sign-in"}>
+            <button className="">সাইন ইন</button>
+          </Link>
+          <Link href={"/sign-up"}>
+            <button className="btn btn-soft bg-green-700 text-white rounded-lg ">
+              সাইন আপ
+            </button>
+          </Link>
         </div>
       </div>
 
-      <Navlinks />
-      <Marquee />
+      {/* <Navlinks /> */}
+      {/* <Marquee /> */}
     </div>
   );
 };
